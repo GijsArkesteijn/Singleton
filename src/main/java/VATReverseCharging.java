@@ -1,6 +1,9 @@
 import java.util.ArrayList;
 
 public class VATReverseCharging {
+
+    private static VATReverseCharging singleton;
+
     private class Country {
 
         private String name;
@@ -15,14 +18,14 @@ public class VATReverseCharging {
             return countryCode;
         }
     }
-    
+
 
 
     private String name;
     private ArrayList<Country> countries;
     private static Country country;
 
-    public VATReverseCharging(String name) {
+    private VATReverseCharging(String name) {
         this.name = name;
         countries = new ArrayList<>();
         countries.add(new Country("Duitsland", "de"));
@@ -31,6 +34,13 @@ public class VATReverseCharging {
         countries.add(new Country("Italie", "it"));
         countries.add(new Country("Spanje", "es"));
         countries.add(new Country("Polen", "pl"));
+    }
+
+    public static VATReverseCharging getInstance(){
+        if(singleton == null){
+            singleton = new VATReverseCharging("Europa");
+        }
+        return singleton;
     }
 
     public String getName() {
