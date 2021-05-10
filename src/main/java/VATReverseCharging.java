@@ -1,12 +1,12 @@
 import java.util.ArrayList;
 
-public class Europa {
+public class VATReverseCharging {
 
     private String name;
     private ArrayList<Country> countries;
     private static Country country;
 
-    public Europa(String name) {
+    public VATReverseCharging(String name) {
         this.name = name;
         countries = new ArrayList<>();
         countries.add(new Country("Duitsland", "de"));

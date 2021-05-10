@@ -5,11 +5,11 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ContinentTest {
 
-    Europa europe;
+    VATReverseCharging europe;
 
     @BeforeEach
     void init () {
-        europe = new Europa("Europe");
+        europe = new VATReverseCharging("Europe");
         europe.addCountry (new Country ("België", "BE"));
         europe.addCountry (new Country ("Duitsland", "DE"));
         europe.addCountry (new Country ("Frankrijk", "FR"));
