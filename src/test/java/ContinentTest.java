@@ -9,10 +9,7 @@ class ContinentTest {
 
     @BeforeEach
     void init () {
-        europe = new VATReverseCharging("Europe");
-        europe.addCountry (new Country ("België", "BE"));
-        europe.addCountry (new Country ("Duitsland", "DE"));
-        europe.addCountry (new Country ("Frankrijk", "FR"));
+        europe = VATReverseCharging.getInstance();
     }
 
     @Test

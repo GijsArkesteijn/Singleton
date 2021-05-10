@@ -28,12 +28,12 @@ public class VATReverseCharging {
     private VATReverseCharging(String name) {
         this.name = name;
         countries = new ArrayList<>();
-        countries.add(new Country("Duitsland", "de"));
-        countries.add(new Country("Frankrijk", "fr"));
-        countries.add(new Country("Belgie", "be"));
-        countries.add(new Country("Italie", "it"));
-        countries.add(new Country("Spanje", "es"));
-        countries.add(new Country("Polen", "pl"));
+        countries.add(new Country("Duitsland", "DE"));
+        countries.add(new Country("Frankrijk", "FR"));
+        countries.add(new Country("Belgie", "BE"));
+        countries.add(new Country("Italie", "IT"));
+        countries.add(new Country("Spanje", "E"));
+        countries.add(new Country("Polen", "PL"));
     }
 
     public static VATReverseCharging getInstance(){
@@ -47,11 +47,7 @@ public class VATReverseCharging {
         return name;
     }
 
-    public void addCountry(Country country) {
-        countries.add(country);
-    }
-
-    public Country getCountry(String countryCode) {
+    private Country getCountry(String countryCode) {
 
         for (Country country : countries) {
 
@@ -65,11 +61,8 @@ public class VATReverseCharging {
 
     public boolean isReverseChargeApplicable(String countryCode) {
 
-        if (this.getName().equals("Europe")) {
-
-            if (this.getCountry(countryCode) != null) {
-                return true;
-            }
+        if (this.getCountry(countryCode) != null) {
+            return true;
         }
 
         return false;
