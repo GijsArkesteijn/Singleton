@@ -9,6 +9,12 @@ public class Europa {
     public Europa(String name) {
         this.name = name;
         countries = new ArrayList<>();
+        countries.add(new Country("Duitsland", "de"));
+        countries.add(new Country("Frankrijk", "fr"));
+        countries.add(new Country("Belgie", "be"));
+        countries.add(new Country("Italie", "it"));
+        countries.add(new Country("Spanje", "es"));
+        countries.add(new Country("Polen", "p"));
     }
 
     public String getName() {
