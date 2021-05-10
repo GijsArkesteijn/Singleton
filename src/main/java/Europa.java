@@ -14,7 +14,7 @@ public class Europa {
         countries.add(new Country("Belgie", "be"));
         countries.add(new Country("Italie", "it"));
         countries.add(new Country("Spanje", "es"));
-        countries.add(new Country("Polen", "p"));
+        countries.add(new Country("Polen", "pl"));
     }
 
     public String getName() {
