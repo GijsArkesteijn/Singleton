@@ -1,6 +1,22 @@
 import java.util.ArrayList;
 
 public class VATReverseCharging {
+    private class Country {
+
+        private String name;
+        private String countryCode;
+
+        public Country (String name, String countryCode) {
+            this.name = name;
+            this.countryCode = countryCode;
+        }
+
+        public String getCountryCode () {
+            return countryCode;
+        }
+    }
+    
+
 
     private String name;
     private ArrayList<Country> countries;
