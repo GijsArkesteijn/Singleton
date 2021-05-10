@@ -1,11 +1,12 @@
 import java.util.ArrayList;
 
-public class Continent {
+public class Europa {
 
     private String name;
     private ArrayList<Country> countries;
+    private static Country country;
 
-    public Continent(String name) {
+    public Europa(String name) {
         this.name = name;
         countries = new ArrayList<>();
     }

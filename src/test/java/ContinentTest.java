@@ -5,11 +5,11 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ContinentTest {
 
-    Continent europe;
+    Europa europe;
 
     @BeforeEach
     void init () {
-        europe = new Continent ("Europe");
+        europe = new Europa("Europe");
         europe.addCountry (new Country ("België", "BE"));
         europe.addCountry (new Country ("Duitsland", "DE"));
         europe.addCountry (new Country ("Frankrijk", "FR"));
